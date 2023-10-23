@@ -10,7 +10,7 @@ export function generateMetadata({ params }: Props) {
   };
 }
 
-export default function PantsPage({ params }: Props) {
+export default function ProductsItemPage({ params }: Props) {
   //props.params
   return <h1>{params.slug} 제품 설명 페이지</h1>;
 }
