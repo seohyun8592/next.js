@@ -27,3 +27,12 @@
 
 - 각 페이지별로 head를 설정할 수 있음
 - generateMetadata 함수를 사용해 다이나믹한 메타데이터 사용 가능
+
+
+## git branch 가져오기
+git remote update
+git checkout -t origin/브랜치명
+
+## 작업 후 master branch merge
+git checkout master
+git merge '작업브랜치명'
