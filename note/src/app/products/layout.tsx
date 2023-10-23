@@ -15,7 +15,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("dd");
   return (
     <>
       <nav className={styles.nav}>
