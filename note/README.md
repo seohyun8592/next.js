@@ -30,9 +30,29 @@
 
 
 ## git branch 가져오기
-git remote update
+git remote update  
 git checkout -t origin/브랜치명
 
 ## 작업 후 master branch merge
-git checkout master
+git checkout master  
 git merge '작업브랜치명'
+
+
+## Server Component
+
+## Client Component
+
+## Fetch
+
+## Rendering
+
+## API Routes
+
+
+v12 
+페이지 단위로 렌더링 방식을 규정
+
+v13 
+한 페이지 내에서 서버 컴포넌트와 클라이언트 컴포넌트를 적절하게 섞어서 사용
+Server Component
+Client Component
