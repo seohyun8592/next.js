@@ -1,4 +1,4 @@
-# next.l
+# next.js
 
 ## Dinamic Routing(동적 라우팅)
 
@@ -16,7 +16,6 @@
 "prefix": "rfc",
 "body": ["export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}($2) {", "$3","return $4;", "}$5"]
 }
-
 }
 
 ## Link
