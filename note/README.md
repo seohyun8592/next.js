@@ -1,4 +1,4 @@
-# next.js
+# next.l
 
 ## Dinamic Routing(동적 라우팅)
 
@@ -12,10 +12,10 @@
 "body": "console.log('$1')"
 },
 
-    "React Function Component": {
-    	"prefix": "rfc",
-    	"body": ["export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}($2) {", "$3","return $4;", "}$5"]
-    }
+"React Function Component": {
+"prefix": "rfc",
+"body": ["export default function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}($2) {", "$3","return $4;", "}$5"]
+}
 
 }
 
@@ -28,15 +28,15 @@
 - 각 페이지별로 head를 설정할 수 있음
 - generateMetadata 함수를 사용해 다이나믹한 메타데이터 사용 가능
 
-
 ## git branch 가져오기
+
 git remote update  
 git checkout -t origin/브랜치명
 
 ## 작업 후 master branch merge
+
 git checkout master  
 git merge '작업브랜치명'
-
 
 ## Server Component
 
@@ -48,11 +48,10 @@ git merge '작업브랜치명'
 
 ## API Routes
 
-
-v12 
+v12
 페이지 단위로 렌더링 방식을 규정
 
-v13 
+v13
 한 페이지 내에서 서버 컴포넌트와 클라이언트 컴포넌트를 적절하게 섞어서 사용
 Server Component
 Client Component

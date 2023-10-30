@@ -1,5 +1,5 @@
-import { getProduct, getProducts } from "@/service/products";
-import { notFound } from "next/navigation";
+import { getProduct, getProducts } from '@/service/products';
+import { notFound } from 'next/navigation';
 
 type Props = {
   params: {
@@ -7,9 +7,9 @@ type Props = {
   };
 };
 
-export function generateMetadata({ params }: Props) {
+export function generateMetadata({ params: { slug } }: Props) {
   return {
-    title: `제품명 : ${params.slug}`,
+    title: `제품명 : ${slug}`,
   };
 }
 
@@ -26,8 +26,8 @@ export default async function ProductsItemPage({ params: { slug } }: Props) {
 // 서버에 요청 할 때 페이지가 만들어 짐 (SSR 방식)
 
 /**
- * 원하는 경로에 한해 페이지를 미리 만들어 놓고 싶을 때 명시해 주는 함수
  * generateStaticParams 함수 : next.js에서 정해준 규격 사항
+ * 원하는 경로에 한해 페이지를 미리 만들어 놓고 싶을 때 명시해 주는 함수
  * 빌드 할 때 명시 해 둔 prop(pants, skirt) 컴포넌트 페이지를 미리 SSG 방식으로 만들어 둠
  */
 export async function generateStaticParams() {
