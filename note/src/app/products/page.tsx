@@ -1,11 +1,10 @@
-import { getProducts } from "@/service/products";
-import Link from "next/link";
-
+import { getProducts } from '@/service/products';
+import Link from 'next/link';
 
 /**
  * revalidate (ISG : Incremental Server Generation)
- * export const revalidate = false (기본은 SSG로 동작)
- * false | 'force-cache' | 0 : 요청이 올 때마다 렌더링(SSG) | number(초 설정)
+ * export const revalidate = false
+ * false : 기본값(기본적으로 SSG로 동작) | 'force-cache' | 0 : 요청이 올 때마다 렌더링(SSG) | number : 초 설정
  */
 
 export const revalidate = 3;
