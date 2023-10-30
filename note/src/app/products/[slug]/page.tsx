@@ -1,6 +1,8 @@
 import { getProduct, getProducts } from '@/service/products';
 import { notFound } from 'next/navigation';
 
+export const revalidate = 3;
+
 type Props = {
   params: {
     slug: string; //폴더 이름에 따라 키 값 변경
