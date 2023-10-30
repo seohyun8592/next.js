@@ -1,4 +1,4 @@
-import { getProducts } from "@/components/products";
+import { getProducts } from "@/service/products";
 import Link from "next/link";
 
 export default async function ProductsPage() {
