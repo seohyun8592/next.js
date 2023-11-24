@@ -15,6 +15,7 @@ import MeowArticle from "@/components/MeowArticle";
 // export const revalidate = 3;
 export default async function ProductsPage() {
   // @서버 파일(데이터베이스)에 있는 제품 리스트를 읽어와서 출력
+  throw new Error();
   const products = await getProducts();
   return (
     <>
