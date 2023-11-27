@@ -25,7 +25,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: 'seohyun',
+        source: '/seohyun',
         destination: '/about/me/seohyun',
       },
       {
