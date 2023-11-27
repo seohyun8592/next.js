@@ -22,6 +22,18 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: 'seohyun',
+        destination: '/about/me/seohyun',
+      },
+      {
+        source: '/item/:slug',
+        destination: '/products/:slug',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
