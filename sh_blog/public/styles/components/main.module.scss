@@ -1,0 +1,33 @@
+main {
+  height: calc(100% - 40px);
+  .banner {
+    &__img {
+      position: relative;
+      @include onFlex();
+      width: 100%;
+      height: rem(450);
+      img {
+        z-index: -1;
+      }
+    }
+    &__txt {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: rem(10);
+      padding: rem(20);
+      margin-top: rem(100);
+
+      p {
+        margin: rem(10) 0;
+      }
+    }
+    &__link {
+      display: inline-block;
+      height: rem(25);
+      line-height: rem(22);
+      background-color: $subTxtColor;
+      border-radius: rem(20);
+      padding: 0 rem(10);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+header {
+  position: absolute;
+  @include onFlex(center, space-between);
+  width: 100%;
+  height: rem(60);
+  font-size: rem(14);
+  padding: 0 rem(20);
+  z-index: 10;
+  .logo {
+    color: #ffffff;
+  }
+}
+
+@include mobile() {
+  header {
+    display: block;
+  }
+}
