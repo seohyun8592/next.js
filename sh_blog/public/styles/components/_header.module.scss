@@ -13,6 +13,10 @@ header {
 
 @include mobile() {
   header {
-    display: block;
+    .logo {
+      h1 {
+        font-size: rem(14);
+      }
+    }
   }
 }
