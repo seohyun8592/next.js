@@ -1,14 +1,12 @@
 main {
-  height: calc(100% - 40px);
+  // height: calc(100% - 40px);
   section {
-
   }
   .banner {
     &__container {
       position: relative;
       width: 100%;
       height: rem(450);
-     
     }
     &__img {
       position: relative;
@@ -43,6 +41,27 @@ main {
       &:hover {
         color: #ffffff;
         background-color: rgba(83, 94, 242);
+      }
+    }
+  }
+
+  .featuredPost {
+    &__container {
+      padding: rem(50) 0 rem(30) rem(20);
+      .title {
+        padding-bottom: rem(30);
+      }
+      .posts {
+        &__items {
+          li {
+            display: inline-block;
+            margin-right: rem(20);
+            margin-top: rem(30);
+            p {
+              font-size: rem(14);
+            }
+          }
+        }
       }
     }
   }
